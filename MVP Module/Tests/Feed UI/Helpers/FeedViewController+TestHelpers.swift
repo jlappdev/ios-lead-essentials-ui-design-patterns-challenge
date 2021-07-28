@@ -58,6 +58,10 @@ extension FeedViewController {
 		return 0
 	}
 
+	var errorView: ErrorView? {
+		tableView.tableHeaderView as? ErrorView
+	}
+
 	var errorMessage: String? {
 		errorView?.message
 	}
